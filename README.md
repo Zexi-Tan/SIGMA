@@ -169,12 +169,3 @@ python Batch_Run.py \
 ```
 
 The paper evaluates SIGMA on 30 UEA multivariate time series benchmarks and real-world case-study datasets. Reported metrics include ACC, F1, NMI, ARI, runtime, GPU memory, noise robustness, embedding compactness, and retained-ratio diagnostics.
-
-
-## Acknowledgment
-
-The manuscript states that generative AI tools were used only for language polishing and writing refinement. The research ideas, method design, experiments, result analysis, and conclusions were completed and verified by the authors.
-
-## License
-
-No explicit license file is included in the current package. Please contact the authors before redistributing or using the code in commercial settings.
