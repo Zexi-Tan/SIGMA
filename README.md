@@ -94,22 +94,6 @@ python Batch_Run.py \
   --epoch_num 5
 ```
 
-Disable masked admission for a full-token baseline:
-
-```bash
-python Batch_Run.py \
-  --dataname BasicMotions \
-  --use_mask 0
-```
-
-Run a Gaussian-noise robustness test:
-
-```bash
-python Batch_Run.py \
-  --dataname BasicMotions \
-  --noise_std 0.1
-```
-
 ## Main Arguments
 
 | Argument | Default | Description |
@@ -186,38 +170,6 @@ python Batch_Run.py \
 
 The paper evaluates SIGMA on 30 UEA multivariate time series benchmarks and real-world case-study datasets. Reported metrics include ACC, F1, NMI, ARI, runtime, GPU memory, noise robustness, embedding compactness, and retained-ratio diagnostics.
 
-## Notes for Large Datasets
-
-For large datasets such as HAR, use mini-batch training and lower the batch size if GPU memory is limited:
-
-```bash
-python Batch_Run.py \
-  --dataname HAR \
-  --batch_size 32 \
-  --patch_size 8 \
-  --target_keep_rate 0.5
-```
-
-If CUDA out-of-memory errors occur, try:
-
-```bash
-export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-```
-
-Then reduce `--batch_size`, `--hidden_dims`, or `--output_dims`.
-
-## Citation
-
-If you use this repository, please cite:
-
-```bibtex
-@inproceedings{tan2026sigma,
-  title     = {Prune but Preserve: Decoupling Redundancy Suppression and Semantic Preservation for Efficient Time Series Clustering},
-  author    = {Tan, Zexi and Xiao, Haoyi and Ouyang, Linhao and Li, Mengke and Zhang, Yiqun and Lu, Yang},
-  booktitle = {Proceedings of the IEEE International Conference on Data Engineering},
-  year      = {2026}
-}
-```
 
 ## Acknowledgment
 
