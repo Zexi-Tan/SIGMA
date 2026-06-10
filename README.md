@@ -21,7 +21,7 @@ SIGMA-main/
 ├── Contrastive_loss.py   # Prototype-style contrastive loss
 ├── utils.py              # Clustering metrics and evaluation utilities
 ├── Cluster_gpu.py        # Optional GPU k-means wrapper
-└── ICDE_Appendix.pdf     # Supplementary experimental details
+└── ICDE_supplemental_material.pdf     # Supplementary experimental details
 ```
 
 ## Requirements
